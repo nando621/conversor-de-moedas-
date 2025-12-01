@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Style/login.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <main class="container">
+        <h1>Login</h1>
+
+        <form id="formLogin" onsubmit="validarLogin(event)">
+
+            <div class="input-box">
+                <input id="email" placeholder="Usuário" type="email" required>
+                <i class='bx bx-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input id="senha" placeholder="Senha" type="password" required>
+                <i class='bx bx-lock-alt'></i>
+            </div>
+
+            <button class="login" type="submit">Entrar</button>
+        </form>
+
+        <div class="register-link">
+            <p>
+                Não tem uma conta?
+                <a href="criar_Conta.html">Cadastre-se</a>
+            </p>
+        </div>
+    </main>
+
+    <script>
+    function validarLogin(event){
+        event.preventDefault();
+
+        const emailDigitado = document.getElementById('email').value;
+        const senhaDigitada = document.getElementById('senha').value;
+
+        const usuarioSalvo = JSON.parse(localStorage.getItem('usuario'));
+
+        if(usuarioSalvo 
+            && emailDigitado === usuarioSalvo.email 
+            && senhaDigitada === usuarioSalvo.senha){
+
+            alert("Login bem sucedido!");
+            window.location.href = "Central.html";
+
+        } else {
+            alert("Usuário ou senha incorretos!");
+        }
+    }
+    </script>
+
+</body>
+</html>

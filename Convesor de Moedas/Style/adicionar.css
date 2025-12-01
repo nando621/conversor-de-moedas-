@@ -1,0 +1,96 @@
+:root {
+    --cor1: #38b000;
+    --cor2: #70e000;
+
+    --fundo: #f7fff3;
+    --texto: #222;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: var(--fundo);
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background: var(--cor1);
+    padding: 15px 0;
+}
+
+.cabecalho .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho h1 {
+    color: white;
+    font-size: 22px;
+}
+
+.cabecalho nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Card */
+.conteudo {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    width: 350px;
+    border: 1px solid #e5e5e5;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: var(--cor1);
+}
+
+/* Form */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+input:focus {
+    border-color: var(--cor1);
+}
+
+/* Botão */
+button {
+    width: 100%;
+    padding: 10px;
+    background: var(--cor1);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--cor2);
+}
