@@ -1,0 +1,79 @@
+:root {
+    --cor1: #ff6b35;
+    --cor2: #ff924c;
+
+    --fundo: #fff5ef;
+    --texto: #222;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: var(--fundo);
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background: var(--cor1);
+    padding: 15px 0;
+}
+
+.cabecalho .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho h1 {
+    color: white;
+    font-size: 22px;
+}
+
+.cabecalho nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Card */
+.conteudo {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    width: 380px;
+    border: 1px solid #eee;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: var(--cor1);
+}
+
+/* Lista */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    background: #ffe9df;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    border-left: 4px solid var(--cor1);
+    font-size: 15px;
+}
+
+ul li:hover {
+    background: #ffd9c9;
+}
